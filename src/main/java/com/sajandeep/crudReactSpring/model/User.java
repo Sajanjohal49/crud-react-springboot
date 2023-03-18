@@ -1,9 +1,12 @@
 package com.sajandeep.crudReactSpring.model;
 
+import jakarta.persistence.Cacheable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+
 @Entity
+@Cacheable(true)
 public class User {
     @Id
     @GeneratedValue
