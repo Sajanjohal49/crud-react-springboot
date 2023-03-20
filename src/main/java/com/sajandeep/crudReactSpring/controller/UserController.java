@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 public class UserController {
     @Autowired
     private UserRepository userRepository;
